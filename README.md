@@ -7,8 +7,8 @@
 ## Docker
 
 ## Kong API Gateway
-[Install](/Kong/Install.MD)
-[Authentication with ApiKey Limit Cosumers](/Kong/AddAuthenLimitConsumers.MD)
+- [Install](/Kong/Install.MD)
+- [Authentication with ApiKey Limit Cosumers](/Kong/AddAuthenLimitConsumers.MD)
 
 ## RabbitMQ Message Broker
 

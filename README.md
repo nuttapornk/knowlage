@@ -1,23 +1,33 @@
 # Knowlage
 
-## JWT
+## Docker (Container Tool)
 
-## OAuth
-
-## Docker
-
-## Kong API Gateway
+## Kong (API Gateway)
 - [Install](/Kong/Install.MD)
 - [Authentication with ApiKey Limit Cosumers](/Kong/AddAuthenLimitConsumers.MD)
 
-## RabbitMQ Message Broker
+## RabbitMQ (Message Broker)
 
-## MinIO Object Storage service
+## MinIO (Object Storage service)
 
-## Redis in-memory data structure store
+## Redis (In-memory data structure store)
 
 ## gRPC (Google Protocol RPC)
 
-## GraphQL Query language for APIs
+## GraphQL (Query language for APIs)
 
 ## Design Pattearn
+
+## JWT Authen
+
+## OAuth
+
+## Git CI/CD
+
+## Treafik (HTTP reverse proxy and load balancer)
+
+## SonarQube (Code Quality and Security)
+
+## OWASP Top Ten
+
+## Zap (Web app scanner)

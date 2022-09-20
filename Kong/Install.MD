@@ -1,5 +1,13 @@
 # Install
 
+Ref : https://blog.leapgio.cloud/api-gateway-kong/
+
+![title](/images/kong/image-12.png)
+
+API Gateway คือ Reverse Proxy อยู่ระหว่าง User Clients กับ Services ทำหน้าที่นำทาง (Routing) และกระจาย (Load Balancing) Request ที่เข้ามาสู่ Services ย่อยๆของเราซึ่งอาจจะเป็น Web App, Mobile App หรือ IoT อีกทั้งยังรวมส่วนงานบางส่วนของ Services ต่างๆของเราเข้ามารวมอยู่ในตัวของมันเอง อาทิเช่น SSL termination, Authentication, Transformations, IP whitelisting, Rate limiting, Logging and monitoring และอื่นๆอีกมากมาย ซึ่งทำให้ผู้ดูแลสามารถบริหารจัดการได้จากส่วนกลางอย่างมีประสิทธิภาพยิ่งขึ้น Services จะมี Performance ที่ดีขึ้น การพัฒนาระบบใหม่ๆได้เร็วและสะดวกสบายยิ่งขึ้นจากการตัดงานที่เหมือนกันบางส่วนออกไป
+
+![title](/images/kong/image-10.png)
+
 ## docker network create kong-net
 
 ## docker compose up -d
@@ -108,3 +116,15 @@ services:
       - "1337:1337"
 ```
 [download docker-compose.yml](/Kong/docker-compose.yml)
+
+
+หลังจากติดตั้งเสร็จเราก็จะได้ Running Container
+![title](/images/kong/image-1536.png)
+
+จากนั้นเราเปิดหน้า Konga Management ขึ้นมา http://<YOUR PUBLIC IP>:1337 ทำการ Register Admin
+
+![title](/images/kong/image-13.png)
+
+สร้าง Connection เพื่อไปต่อกับ Kong โดยใช้ port 8001
+
+![title](/images/kong/image-2.png)

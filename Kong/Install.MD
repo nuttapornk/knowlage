@@ -3,7 +3,7 @@
 ## docker network create kong-net
 
 ## docker compose up -d
-```
+```yaml
 version: "3.7"
 volumes:
   kong_data: {}

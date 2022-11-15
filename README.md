@@ -11,6 +11,7 @@
 ## MinIO (Object Storage service)
 
 ## Redis (In-memory data structure store)
+- [Install](/Redis/Install.MD)
 
 ## gRPC (Google Protocol RPC)
 

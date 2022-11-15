@@ -1,14 +1,23 @@
-## Redis Config
+# Install Ubuntu Server 20.04 LTS
+## Step 1 Install redis
+```
+sudo apt update
+sudo apt install redis-server
+```
 
+## Step 2 Configure Redis
+```
 sudo nano /etc/redis/redis.conf
-
 ```
-bind 127.0.0.1 ::1 -> bind * -::* #All Ip Address
-peotected-mode yes -> peotected-mode no #Enable Lan
-```
+- Edit
+  -  bind 127.0.0.1 ::1 -> bind * -::* #All Ip Address
+  -  peotected-mode yes -> peotected-mode no #Enable Lan
 
+## Step 3 Restart Redis Service
+```
 sudo systemctl restart redis
 sudo systemctl status redis
+```
 
 
 หากคุณมีบริการไฟร์วอลล์ UFW ทำงานอยู่คุณต้องเปิดพอร์ตที่ Redis กำลังฟังอยู่ในไฟร์วอลล์ สิ่งนี้จะเปิดใช้งานคำขอภายนอกเพื่อส่งผ่านไฟร์วอลล์ไปยังเซิร์ฟเวอร์ Redis
